@@ -15,6 +15,15 @@ public class BookVO {
 	
 	private String filename;
 	
+	private int quantity;
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
 	public BookVO() {
 		
 	}
@@ -126,7 +135,9 @@ public class BookVO {
 		return "BookVO [bookId=" + bookId + ", name=" + name + ", unitPrice=" + unitPrice + ", author=" + author
 				+ ", desciption=" + desciption + ", publisher=" + publisher + ", categpry=" + categpry
 				+ ", unitsInStock=" + unitsInStock + ", totalPages=" + totalPages + ", releaseDate=" + releaseDate
-				+ ", condition=" + condition + ", filename=" + filename + "]";
+				+ ", condition=" + condition + ", filename=" + filename + ", quantity=" + quantity + "]";
 	}
+
+	
 	
 }
